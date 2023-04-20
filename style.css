@@ -1,0 +1,701 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618324896_33-phonoteka_org-p-temno-sinii-fon-dlya-fotoshopa-36.jpg)
+}
+
+
+.Main-Wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-one{
+    height: 20px;
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    border-radius: 9px;
+
+    background-color: rgba(8, 56, 100, 0.678);
+    z-index: 3;
+   
+}
+.input-two{
+    height: 20px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 9px;
+
+    background-color: rgba(8, 56, 100, 0.678);
+    z-index: 3;
+    
+}.input-one:focus{
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    outline: none;
+    border-color:rgba(18, 30, 187, 0.877);
+}.input-two:focus{
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    outline: none;
+    border-color:rgba(18, 94, 236, 0.877);
+
+}
+
+.video{
+    position: absolute;
+    left: 0.1px;
+    width: 800px;
+    top: 1px;
+    height: auto;
+
+}
+
+/* mask */
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 1100px;
+    /* width: 830px; */
+    /* height: 449px; */
+    top: -7px;
+    height: 460px;
+    left: -300px;
+}.intro:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 23, 26, 0.61);
+    position: absolute;
+    z-index: 2;
+
+}
+
+.btn{
+    position: absolute;
+    border: none;
+    width: 175px;
+    height: 25px;
+    top: 200px;
+    left: 600px;
+    top: 240px;
+    z-index: 3;
+    border-radius: 10px;
+    transition-duration: 2s;
+    box-shadow: inset;
+    background-color: rgba(5, 88, 121, 0.479);
+    cursor: pointer;
+}
+.btn:hover{
+    transition-duration: 1s;
+    width: 180px;
+    height: 30px;
+    background-color: rgba(16, 119, 119, 0.548);
+}
+
+.forgot-text{
+    position: absolute;
+    top: 256px;
+    left: 600px;
+    z-index: 3;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}.forgot-text:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.home{
+    position: fixed;
+    top: 10px;
+    left: 840px;
+    color: rgb(236, 231, 231);
+    transition-duration: 1s;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+
+}.list{
+    position: fixed;
+    top: 10px;
+    left: 920px;
+    color: rgb(236, 231, 231);
+    transition-duration: 1s;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}.section{
+    position: fixed;
+    top: 10px;
+    left: 1000px;
+    color: rgb(236, 231, 231);
+    transition-duration: 1s;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}.option{
+    position: fixed;
+    top: 10px;
+    left: 1090px;
+    color: rgb(236, 231, 231);
+    transition-duration: 1s;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.home:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    font-size: 20px;
+}
+.list:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    font-size: 20px;
+}
+.section:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    font-size: 20px;
+}
+.option:hover{
+    text-decoration:underline;
+    cursor:pointer; 
+    font-size: 20px;  
+}
+
+
+
+.hr-line{
+    position: absolute;
+    width: 6px;
+    height: 340px;
+    right: 220px;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+.download-btn{
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 200px;
+    right: 27px;
+    width: 160px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(55, 0, 206, 0.788);
+    transition-duration: 2s;
+
+}.download-btn:hover{
+    background-color: rgba(0, 4, 223, 0.747);
+}
+.mb-text{
+    position: absolute;
+    top: 241px;
+    right: 87px;
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    transition-duration: 600ms;
+}.mb-text:hover{
+    color: rgba(0, 0, 0, 0.445);
+}
+.play-list-text{
+    position: absolute;
+    top: 143px;
+    right: 3px;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid rgb(99, 99, 99);
+    box-shadow: inset 0 0 2.5px 2px rgb(10, 10, 10);
+} 
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, rgb(24, 24, 43), rgb(0, 0, 0) );
+    border-radius: 20px;
+    height: 200px;
+}::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(45deg, rgba(24, 24, 43, 0.527), rgba(0, 0, 0, 0.452) );
+}
+
+/* videos */
+.video-one{
+   position: absolute;
+   width: 230px;
+   height: 120px;
+   top: 90px;
+   left: 820px;
+}
+.video-two{
+   position: absolute;
+   width: 230px;
+   height: 120px;
+   top: 240px;
+   left: 820px;
+}
+
+.svg-one{
+    position: absolute;
+    top: 60px;
+    left: 700px;
+    animation-name: Music;
+    animation-timing-function: 1s;
+    animation-duration: 2s;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+}
+
+@keyframes Music {
+    0%{
+     left: 160px;
+    }
+    20%{
+        left: 140px;
+        top: 17px;
+    }
+    65%{
+        left: 150px;
+        top: 60px;
+    }
+    80%{
+        left: 190px;
+        top: 20px;
+        bottom: 70px;
+    }
+    96%{
+        left: 90px;
+        top: 10px;
+    }
+    100%{
+        left: 40px;
+    }
+}
+
+.head-phones{
+    position: absolute;
+    top: 490px;
+    left: 0;
+    animation-name: ms;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+}
+
+@keyframes ms {
+    0%{
+        left: 20px;
+    }
+    50%{
+        left: 900px;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+
+
+.muscises{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.first-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 700px;
+    left: 70px;
+    transition-duration:  2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}.First-audio{
+    position: absolute;
+    top: 170px;
+    left: 110px;
+    width: 100px;
+}.first-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.second-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 700px;
+    left: 500px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}.Second-audio{
+    position: absolute;
+    top: 170px;
+    left: 134px;
+    width: 100px;
+}.second-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.third-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 700px;
+    left: 900px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Third-audio{
+    position: absolute;
+    top: 180px;
+    left: 109px;
+    width: 100px;
+}.third-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.four-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1100px;
+    left: 70px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Four-audio{
+    position: absolute;
+    top: 135px;
+    left: 109px;
+    width: 100px;
+}.four-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.five-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1100px;
+    left: 500px;
+    cursor: pointer;
+    transition-duration: 2s;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Five-audio{
+    position: absolute;
+    top: 140px;
+    left: 134px;
+    width: 100px;
+}.five-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.six-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1100px;
+    left: 900px;
+    cursor: pointer;
+    transition-duration: 2s;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Six-audio{
+    position: absolute;
+    width: 100px;
+    left: 109px;
+    top: 140px;
+}.six-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.seven-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1700px;
+    left: 70px;
+    cursor: pointer;
+    transition-duration: 2s;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Seven-audio{
+    position: absolute;
+    width: 100px;
+    left: 110px;
+    top: 150px;
+}.seven-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.eight-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1700px;
+    left: 500px;
+    cursor: pointer;
+    transition-duration: 2s;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Eight-audio{
+    position: absolute;
+    width: 100px;
+    left: 134px;
+    top: 150px;
+
+}.eight-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+.nine-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 1700px;
+    left: 900px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Nine-audio{
+    position: absolute;
+    width: 100px;
+    left: 103px;
+    top: 150px;
+}.nine-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+
+.ten-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    left: 70px;
+    top: 2100px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Ten-audio{
+    position: absolute;
+    width: 100px;
+    left: 110px;
+    top: 150px;
+}.ten-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+
+.elv-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 2100px;
+    left: 500px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Elv-audio{
+    position: absolute;
+    width: 100px;
+    left: 134px;
+    top: 150px;
+}.elv-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+
+.self-music{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.308);
+    top: 2100px;
+    left: 900px;
+    transition-duration: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}.Self-audio{
+    position: absolute;
+    width: 100px;
+    left: 115px;
+    top: 150px;
+}.self-music:hover{
+    background-color: rgba(245, 222, 179, 0.185);
+}
+
+/* high text */
+
+.big-line{
+    position: absolute;
+    width: 1150px;
+    height: 4px;
+    background-color: white;
+    top: 1600px;
+    left: 70px;
+
+}
+
+
+.Modern-text{
+    position: absolute;
+    top: 600px;
+    left: 70px;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+    transition-duration: 3s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}.Modern-text:hover{
+    font-size: 30px;
+}
+.legendary-mus-text{
+    position: absolute;
+    top: 1600px;
+    left: 70px;
+    color: rgb(214, 214, 214);
+    transition-duration: 3s;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}.legendary-mus-text:hover{
+    font-size: 30px;
+}
+
+
+/* plastic icons */
+.plastic-icon-first{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-first:hover{
+    left: 10px;
+}
+
+.plastic-icon-second{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-second:hover{
+    left: 10px;
+}
+.plastic-icon-third{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-third:hover{
+    left: 10px;
+}
+.plastic-icon-four{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-four:hover{
+    left: 10px;
+}
+.plastic-icon-five{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-five:hover{
+    left: 10px;
+}
+.plastic-icon-six{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-six:hover{
+    left: 10px;
+}
+
+.plastic-icon-seven{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-seven:hover{
+    left: 10px;
+}
+
+.plastic-icon-eight{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-eight:hover{
+    left: 10px;
+}
+
+.plastic-icon-nine{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-nine:hover{
+    left: 10px;
+}
+.plastic-icon-ten{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-ten:hover{
+    left: 10px;
+}
+.plastic-icon-elv{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-elv:hover{
+    left: 10px;
+}
+.plastic-icon-self{
+    position: absolute;
+    top: 90px;
+    cursor: pointer;
+}.plastic-icon-self:hover{
+    left: 10px;
+}
+
+
+.footer-text{
+    position: absolute;
+    top: 2500px;
+    right: 800px;
+    padding-bottom: 60px;
+}.footer-text:hover{
+    text-decoration: underline;
+}
+
+/* social icons */
+.facebook-icon{
+    position: absolute;
+    top: 2507px;
+    right: 726px;
+    cursor: pointer;
+}.instagram-icon{
+    position: absolute;
+    top: 2507px;
+    right: 670px;
+    cursor: pointer;
+}.telegram-icon{
+    position: absolute;
+    top: 2507px;
+    right: 617px;
+    cursor: pointer;
+}
+
+
